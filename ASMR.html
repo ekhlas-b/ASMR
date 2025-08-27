@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ASMR by KeKo</title>
+</head>
+<body>
+	<h1>ASMR By KeKo</h1><br>
+	<h3>Animal Sounds</h1>
+
+	<button class="animal" data-sound="bird.mp3">Bird</button>
+	<button class="animal" data-sound="cat.mp3">Cat</button> 
+	<button class="animal" data-sound="cow.mp3">Cow</button>
+	<button class="animal" data-sound="dog.mp3">Dog</button>
+	<button class="animal" data-sound="Horse.mp3">Horse</button>
+<script>
+  const animalButton = document.querySelectorAll('.animal');
+    animalButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const soundFile = button.getAttribute('data-sound');
+        const audio = new Audio(soundFile);
+        audio.play();
+      });
+    });
+</script>
+
+</body>
+<html>
